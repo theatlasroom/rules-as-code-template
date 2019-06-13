@@ -1,24 +1,21 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import App from './components/App.js'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import App from "./components/App.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-import { routes } from './routes/index'
+// import { routes } from './routes/index'
 
-let router = new VueRouter({
-	mode: 'hash',
-	routes
-})
+// let router = new VueRouter({
+// 	mode: "hash",
+// 	routes
+// });
 
 new Vue({
 	el: "#app",
-	router,
+	// router,
 	render: h => h(App)
-})
-
-
-
+});
 
 // import App from './components/App.js'
 

@@ -1,21 +1,20 @@
 <template>
-
-    <div class="container">
-
-      <div class="row justify-content-md-center">
-
-        <div class="col-sm-8">
-
-          Form will be shown here
-
-        </div>
-      </div>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">Form will be shown here</div>
+      <user-list></user-list>
     </div>
+  </div>
+</template>
 
-  </template>
+<script>
+import UserList from "./UserList";
 
-  <script>
-  export default {
-
-  }
+export default {
+  name: "App",
+  components: {
+    UserList
+  },
+  data() {}
+};
 </script>

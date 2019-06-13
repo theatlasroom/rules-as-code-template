@@ -13,12 +13,37 @@
 		"watch:js": "onchange './src/js/**/*.js' -- npm run build:js",
 		"serve": "browser-sync start --server ./dist -w --files \"./src/index.html\" \"./dist/css/main.css\" \"./dist/js/script.js\"",
 		"start": "browser-sync start --server 'src' --files 'src' --single",
-		"watch": "npm run build && npm run serve & npm run watch:sass & npm run watch:js"
+		"watch": "npm run build && npm run serve & npm run watch:sass & npm run watch:js",
+		"vue:serve": "vue-cli-service serve",
+		"vue:build": "vue-cli-service build",
+		"vue:lint": "vue-cli-service lint && npm run build"
 	},
 	"license": "MIT",
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/essential",
+			"eslint:recommended"
+		],
+		"rules": {},
+		"parserOptions": {
+			"parser": "babel-eslint"
+		}
+	},
 	"devDependencies": {
+		"@vue/cli-plugin-babel": "^3.8.0",
+		"@vue/cli-plugin-eslint": "^3.8.0",
+		"@vue/cli-service": "^3.8.0",
+		"babel-eslint": "^10.0.1",
+		"eslint": "^5.16.0",
+		"eslint-plugin-vue": "^5.0.0",
+		"vue-template-compiler": "^2.6.10",
 		"browser-sync": "^2.26.5",
-		"onchange": "^4.1.0"
+		"onchange": "^4.1.0",
+		"vue-loader": "^15.7.0"
 	},
 	"dependencies": {
 		"@digital.nsw/core": "latest",

@@ -1,4 +1,6 @@
+<script>
 export default {
-  name: `UserInfo`,
+	name: `UserInfo`,
   template: `<p><slot></slot></p>`,
 };
+</script>
