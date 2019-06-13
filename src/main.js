@@ -1,8 +1,8 @@
 import Vue from "vue";
-import VueRouter from "vue-router";
+// import VueRouter from "vue-router";
 import App from "./components/App.vue";
 
-Vue.use(VueRouter);
+// Vue.use(VueRouter);
 
 // import { routes } from './routes/index'
 

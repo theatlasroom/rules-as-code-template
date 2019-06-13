@@ -8,6 +8,7 @@
 </template>
 
 <script>
+// import "../../dist/css/main.css";
 import UserList from "./UserList";
 
 export default {
@@ -15,6 +16,8 @@ export default {
   components: {
     UserList
   },
-  data() {}
+  data() {
+    return {};
+  }
 };
 </script>
